@@ -1,0 +1,206 @@
+$header-color: #bedcff;
+$text-color: #002681;
+$header-bg-color: #a3b6ca6a;
+$button-bg-color: #b7cce1;
+
+body {
+    margin: 0;
+    // height: 10000px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    user-select: none;
+}
+
+.header-bg {
+    display: flex;
+    background-color: $header-color;
+    width: 800px;
+    margin: auto;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    position: fixed;
+
+    & .header {
+        display: flex;
+        align-items: center;
+
+        & .header-list {
+            display: flex;
+            padding-left: 0;
+            margin: 0;
+            height: 60px;
+
+            & .header-list-element {
+                display: flex;
+                height: 100%;
+
+                &:first-child {
+                    border-bottom-left-radius: 30px;
+                }
+
+                &:hover {
+                    background-color: $header-bg-color;
+                    transition: 0.25s ease;
+                }
+
+                & a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 125px;
+                    font-size: 20px;
+                    color: #002681;
+                }
+            }
+        }
+
+        & .avatar {
+            display: flex;
+            align-items: center;
+            right: 30px;
+            position: absolute;
+
+            & img {
+                width: 50px;
+            }
+        }
+    }
+}
+
+.logo {
+    position: fixed;
+
+    & img {
+        width: 100px;
+        left: 130px;
+        position: absolute;
+        margin-top: 90px;
+        animation: rotateAlways 1.5s linear infinite;
+    }
+}
+
+@keyframes rotateAlways {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.categories-bg {
+    position: fixed;
+
+    display: flex;
+    top: 240px;
+    left: 95px;
+
+    & .categories {
+        text-align: center;
+
+        & span {
+            font-size: 28px;
+            color: $text-color;
+            font-weight: bold;
+        }
+
+        & .categories-list {
+            padding: 0;
+
+            & .categories-list-element {
+                margin: 20px 0 20px 0;
+                font-size: 20px;
+
+                & a {
+                    color: $text-color;
+                    background-color: $header-color;
+                    height: 40px;
+                    width: 175px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 25px;
+
+                    &:hover {
+                        background-color: $button-bg-color;
+                        transition: 0.25s ease;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.main {
+    margin: auto;
+    margin-left: 370px;
+    width: 830px;
+    height: 100px;
+    position: relative;
+    top: 110px;
+
+    & .title {
+        font-size: 28px;
+        color: $text-color;
+        font-weight: bold;
+    }
+
+    & div {
+        width: 89.5%;
+        height: 5px;
+        background-color: $header-color;
+    }
+
+    & .main-list {
+        display: flex;
+        padding: 0;
+        flex-wrap: wrap;
+        /* Дозволяє елементам переходити на новий рядок */
+
+        & .main-list-element {
+            margin-right: 85px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+
+            & .main-list-element-a {
+                display: block;
+                border: 1px solid $text-color;
+                border-radius: 10px;
+                padding: 10px;
+                background: $header-color;
+
+                & img {
+                    width: 169px;
+                    height: 169px;
+                }
+
+                & span {
+                    color: $text-color;
+                    font-size: 20px;
+                    margin-top: 15px;
+                    display: block;
+                }
+
+                &:hover {
+                    background-color: $button-bg-color;
+                    transition: 0.25s ease;
+                }
+            }
+        }
+    }
+}
