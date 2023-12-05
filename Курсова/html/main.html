@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomato: головна</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="header-bg">
+        <div class="header">
+            <ul class="header-list">
+                <li class="header-list-element"> <a href="./main.html">Головна</a></li>
+                <li class="header-list-element"> <a href="">Новинки</a></li>
+                <li class="header-list-element"> <a href="">Знижки</a></li>
+                <li class="header-list-element"> <a href="">Хіти</a></li>
+                <li class="header-list-element"> <a href="">Для гурманів</a></li>
+            </ul>
+
+            <a href="./profile.html" class="avatar">
+                <img src="../images/monke-avatar.png" alt="">
+            </a>
+        </div>
+    </div>
+
+    <div class="logo">
+        <a href="./main.html">
+            <img src="../images/tomato-logo.png" alt="">
+        </a>
+    </div>
+
+    <div class="categories-bg">
+        <div class="categories">
+            <span>Категорії</span>
+
+            <ul class="categories-list">
+                <li class="categories-list-element">
+                    <a href="">Червоні</a>
+                </li>
+                <li class="categories-list-element">
+                    <a href="">Жовті</a>
+                </li>
+                <li class="categories-list-element">
+                    <a href="">Зелені</a>
+                </li>
+                <li class="categories-list-element">
+                    <a href="">Сині</a>
+                </li>
+                <li class="categories-list-element">
+                    <a href="">Помаранчеві</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="search-bg">
+            <form action="" method="get">
+                <input type="text" placeholder="Пошук" oninput="filterProducts(this.value)">
+            </form>
+        </div>
+
+        <span class="title">Головна сторінка</span>
+        <div class="title-underline"></div>
+
+        <ul class="main-list" id="productList">
+            <li class="main-list-element">
+                <a href="" class="main-list-element-a">
+                    <img src="../images/products/nice-tomato.png" alt="">
+                    <center><span>Гарний помідор</span></center>
+                </a>
+            </li>
+            <li class="main-list-element">
+                <a href="" class="main-list-element-a">
+                    <img src="../images/products/nice-tomato.png" alt="">
+                    <center><span>Негарний помідор</span></center>
+                </a>
+            </li>
+            <li class="main-list-element">
+                <a href="" class="main-list-element-a">
+                    <img src="../images/products/nice-tomato.png" alt="">
+                    <center><span>Дуже гарний помідор</span></center>
+                </a>
+            </li>
+            <li class="main-list-element">
+                <a href="" class="main-list-element-a">
+                    <img src="../images/products/nice-tomato.png" alt="">
+                    <center><span>Гарний помідор</span></center>
+                </a>
+            </li>
+            <li class="main-list-element">
+                <a href="" class="main-list-element-a">
+                    <img src="../images/products/nice-tomato.png" alt="">
+                    <center><span>Гарний помідор</span></center>
+                </a>
+            </li>
+            <li class="main-list-element">
+                <a href="" class="main-list-element-a">
+                    <img src="../images/products/nice-tomato.png" alt="">
+                    <center><span>Гарний помідор</span></center>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <script src="../js/search.js"></script>
+</body>
+</html>
